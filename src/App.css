@@ -53,7 +53,7 @@
   
   .display-none{
 	display: flex;
-	width: 89%;
+	width: 80%;
   }
   
   .nav-logo{
@@ -66,10 +66,20 @@
 	margin-left: 5%;
 	font-family: 'Bree Serif', serif;
   }
+
+  .scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(95,19,108);
+background: linear-gradient(90deg, rgba(95,19,108,1) 0%, rgba(88,11,107,1) 46%, rgba(139,14,169,1) 100%);
+color: white;
+  }
   
   .nav-components{
 	display: flex;
-	width: 80%;
+	width: 100%;
+  margin-right: 5%;
   }
   
   .nav-components ul{
@@ -128,14 +138,6 @@
   .nav-components ul li a:hover:before{
     width: 100%;
   }
-
-
-
-  
-  /* .nav-components ul li:hover{
-	text-decoration: underline;
-	cursor: pointer;
-  } */
   
   .nav-login{
 	width: 9%;
@@ -145,28 +147,8 @@
 	padding-right: 1%;
   }
 
-  .nav-login button{
-	background-color: white;
-	color: black;
-	border: none;
-	font-weight: 600;
-	font-size: 120%;
-	padding: 2% 15%;
-	border-radius: 10px;
-  }
-
-  .nav-login2 button{
-	background-color: white;
-	color: black;
-	border: none;
-	font-weight: 600;
-	font-size: 120%;
-	padding: 5% 15%;
-	border-radius: 10px;
-  }
-
   .nav-login button, .nav-login2 button {
-    padding: 5% 13%;
+    padding: 1% 13%;
     border: unset;
     border-radius: 15px;
     color: #212121;
@@ -181,7 +163,8 @@
     overflow: hidden;
    }
    
-   .nav-login button::before {
+   .nav-login button::before,
+   .nav-login2 button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -196,11 +179,14 @@
     transition: all 250ms
    }
    
-   .nav-login button:hover {
+   .nav-login button:hover,
+   .nav-login2 button:hover {
     color: #e8e8e8;
    }
    
-   .nav-login button:hover::before {
+   .nav-login button:hover::before,
+   .nav-login2 button:hover::before
+   {
     width: 100%;
    }
 
@@ -234,18 +220,22 @@
 
 	.nav-login{
 		width: 22%;
-		margin-left: 70%;
+    margin-left: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.2%;
 	}
 
 	.nav-login2{
 		width: 22%;
-		margin-left: 55%;
+		margin-left: 37%;
 		border-radius: 24px;
 	}
 
 	.nav-login button{
 		font-size: 60%;
-		font-weight: 600;
+		/* font-weight: 600; */
 	}
 
 	.nav-login2 button{
@@ -253,15 +243,16 @@
 	}
   
 	.container1{
-	  width: 20%;
-	  display: block;
-	  background-color: black;
-	  position: relative;
-	  margin-top: -5%;
-	  padding-left: 3%;
-	  padding-right: 10%;
-	  padding-top: 5%;
-	  margin-left: -3%;
+    z-index: 1;
+    width: 40%;
+    display: block;
+    background-color: black;
+    position: relative;
+    padding-left: 6%;
+    padding-right: 15%;
+    padding-top: 5%;
+    margin-right: -10;
+    height: 100vh;
 	}
   
 	.nav-components ul{
@@ -279,18 +270,19 @@
 	}
   
 	.sidebar{
+    font-size: 85%;
 	  display: inline;
-	  margin-top: 0.8%;
+	  margin-top: 0.7%;
+    margin-left: 2%;
 	  /* width: 20%; */
 	  
 	}
   
 	.sidebar2{
-	position: absolute;
-    /* margin-top: 3%; */
-    z-index: 1;
-    /* width: 30%; */
-	margin-left: 20%;
+    position: absolute;
+    z-index: 2;
+    margin-left: 32%;
+    margin-top: 3%;
     padding-right: 2%;
 	}
 	.sidebar2 button{
@@ -420,44 +412,6 @@
 width: 60%;
   padding: 2.5%;
 } 
-
-/* .news-read-more button { */
-  /* color: #fff; */
-  /* font-weight: 700;
-  font-size: 20px; */
-  /* margin-top: 60px; */
-  /* letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: transparent;
-}
-.news-read-more button svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-.news-read-more button:hover svg {
-  margin-left: 25px;
-}
-.banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
-} */ 
 
 .news-read-more button {
   position: relative;

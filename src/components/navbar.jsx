@@ -1,11 +1,30 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, React } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 
 export const Navbar=()=>{
     const [sidebar, setSidebar]= useState(false);
+   
+const [scrolled,setScrolled]=useState(false);
+const handleScroll=() => {
+    const offset=window.scrollY;
+    if(offset > 400 ){
+      setScrolled(true);
+    }
+    else{
+      setScrolled(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll',handleScroll)
+  })
+let navbarClasses=['navbar'];
+  if(scrolled){
+    navbarClasses.push('scrolled');
+  }
     return(
-        <div className="Container">
+        <div className={`Container ${navbarClasses.join(" ")}`}>
             <div className={sidebar?"sidebar2":"sidebar"}>
         <button onClick={()=>{
             setSidebar(!sidebar)

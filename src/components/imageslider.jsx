@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Imageslider = () => {
     const [currimg, setcurrimg] = useState(0);
     return <div>
-        <div className="w-[100%] h-[500px] mx-auto mt-[3%] bg-gradient-to-r from-[#792ebe] to-[#2e0969] ">
+        <div className="w-[100%] h-[500px] mx-auto bg-gradient-to-r from-[#5F0A87] to-[#A4508B] ">
             <motion.div className="w-[100%] h-[100%] bg-center bg-no-repeat bg-cover grid grid-cols-12 "
 
             >

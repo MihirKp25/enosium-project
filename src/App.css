@@ -572,7 +572,7 @@ width: 60%;
 
 /*dashboard button css-------*/
 .cta {
-  width: 35%;
+  width: 36%;
   height: 65%;
   position: relative;
   margin: auto;
@@ -593,8 +593,8 @@ width: 60%;
   left: 0;
   display: block;
   border-radius: 50px;
-  background: #2e0969;
-  width: 30%;
+  background: #c111c9;
+  width: 29%;
   height: 100%;
   transition: all 0.3s ease;
  }
@@ -602,11 +602,10 @@ width: 60%;
  .cta span {
   position: relative;
   font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
+  font-size: 150%;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #234567;
-  margin-left: 30%;
  }
 
 
@@ -637,7 +636,8 @@ width: 60%;
   transform: scale(0.95);
  }
 
- .cta:hover span{
+ .cta:hover span
+ {
   color: white;
  }
  

@@ -7,9 +7,9 @@ import NewsSlider from './components/newsSlider';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      
       <Home/>
-      <NewsSlider/>
+      
       
     </div>
   );

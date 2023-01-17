@@ -42,12 +42,6 @@
 }
 
 /*--------------Navbar CSS*/
-/* body{
-	background-image: url('https://media.istockphoto.com/id/1334591614/photo/man-using-digital-tablet-online-connect-to-internet-banking-currency-exchange-online-shopping.jpg?b=1&s=170667a&w=0&k=20&c=uVgjqk6ZUldPjFOUX35vNMUzJZ6tz_IDV7apr1AWhII=');
-	background-position: top center;
-	background-size: cover;
-	background-repeat: no-repeat;
-} */
 
 .Container{
 	width: 100%;
@@ -95,11 +89,53 @@
 	text-decoration: none;
 	color: white;
   }
+
+  .nav-components ul li a{
+    position: relative;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+  }
+
+  .nav-components ul li a:before,
+  .nav-components ul li a:after{
+    content:"";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: black;
+    transition: 0.5s;
+  }
+
+  .nav-components ul li a:after{
+    left: 0;
+    bottom: -6px;
+  }
+
+  .nav-components ul li a:before{
+    right: 0;
+    bottom: 18px;
+  }
+
+  .nav-components ul li a:hover{
+    font-weight: 700;
+  }
+
+  .nav-components ul li a:hover:after,
+  .nav-components ul li a:hover:before{
+    width: 100%;
+  }
+
+
+
   
-  .nav-components ul li:hover{
+  /* .nav-components ul li:hover{
 	text-decoration: underline;
 	cursor: pointer;
-  }
+  } */
   
   .nav-login{
 	width: 9%;
@@ -518,3 +554,66 @@ width: 60%;
   font-size: 200%;
   font-weight: 700;
  }
+
+ /*footer*/
+
+ .footer-btn{
+  width: 90%;
+ }
+
+.footer-btn button {
+  width: 100%;
+  margin-left: 3%;
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.footer-btn button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-btn button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-btn button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.footer-btn button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.footer-btn button:hover span {
+  transform: translateX(5em);
+}
+
+.footer-btn button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+

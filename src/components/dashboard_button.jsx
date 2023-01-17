@@ -22,9 +22,8 @@ export const DashBoardDiv=()=>{
 </button>
             <div className="row-span-1"></div>
         </div>
-        <div className="col-span-1 items-center mx-auto my-auto text-left text-lg text-[#2e0969]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in aliquid explicabo, ducimus necessitatibus rerum ipsa doloribus cumque ipsum aperiam asperiores animi natus incidunt.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum doloribus illum, optio facere numquam magnam rem enim? Dolorum molestiae soluta, quae doloremque ducimus vel.
+        <div className="col-span-1 items-center my-auto text-left text-3xl text-[#2e0969] mr-44 text-center font-semibold" >
+        Take the first step towards financial freedom by using our loan prediction website to get a personalized loan plan
         </div>
     </div>
 }

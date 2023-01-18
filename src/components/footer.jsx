@@ -2,8 +2,8 @@ import { motion } from "framer-motion"
 
 
 export const Footer=()=>{
-    return <div className="w-[100%] h-60  mb-[0%] grid grid-cols-8 bg-gradient-to-l from-[#792ebe] to-[#2e0969] text-white"> 
-        <div className="col-span-3 grid grid-rows-2">
+    return <div className="w-[100%] lg:h-72 md:h-[600px] h-[700px]  mb-[0%] grid md:grid-cols-5 grid-cols-3  lg:grid-cols-8 bg-gradient-to-l from-[#792ebe] to-[#2e0969] text-white px-6 py-6"> 
+        <div className="col-span-3 md:col-span-3 grid grid-rows-2">
             <div className="row-span-1  text-left">
                 <h1 className="text-xl ml-[3%] mt-[2%] font-bold">About us</h1>
                 <p className="ml-[3%] mt-[2%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet perspiciatis architecto et illo ea vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae beatae autem hic doloremque, id suscipit!</p>
@@ -33,8 +33,8 @@ export const Footer=()=>{
     
     {/* //input */}
 
-    <div className="row-span-1  text-left ">
-        <input placeholder="Enter your email Address" className="bg-[#e2e3e4] text-left rounded-md  w-[90%] h-[90%] ml-[3%] pl-[2%] text-black"></input>
+    <div className="row-span-1  text-left mb-[2%]">
+        <input placeholder="Enter your email Address" className="bg-[#e2e3e4] text-left rounded-md  w-[90%] h-[90%] ml-[3%] mb-[2%] pl-[2%] text-black"></input>
     </div>
     {/* <div className="row-span-1 text-left">
         <motion.input type="submit" className="text-center border-solid rounded-md  w-[90%] h-[90%] ml-[3%] pl-[2%] bg-[#577de3] hover:bg-[#425fad] text-xl text-white font-semibold" value="Send" 
@@ -45,7 +45,7 @@ export const Footer=()=>{
         ></motion.input>
 
     </div> */}
-    <div className="row-span-1 text-left footer-btn">
+    <div className="row-span-1 text-left footer-btn mb-[2%]">
     <button>
   <div class="svg-wrapper-1">
     <div class="svg-wrapper">

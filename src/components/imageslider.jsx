@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 export const Imageslider = () => {
     const [currimg, setcurrimg] = useState(0);
     return <div>
-        <div className="w-[100%] h-[500px] mx-auto bg-gradient-to-r from-[#5F0A87] to-[#A4508B] ">
-            <motion.div className="w-[100%] h-[100%] bg-center bg-no-repeat bg-cover grid grid-cols-12 "
+        <div className="w-[100%] h-[600px] mx-auto bg-gradient-to-l from-[#2e0969] to-[#792ebe] z-1">
+            <motion.div className="w-[100%] h-[100%] bg-center bg-no-repeat bg-cover grid sm:grid-cols-12 "
 
             >
-                <div className="col-span-7 h-[100%] grid grid-rows-4" onClick={() => {
+                <div className="sm:col-span-7 h-[100%] grid grid-rows-4" onClick={() => {
                     setcurrimg((currimg - 1 + Image.length) % Image.length)
                 }}>
 
@@ -38,10 +38,10 @@ export const Imageslider = () => {
 
 
                 </div>
-                <div className="col-span-1 h-[100%]">
+                <div className="col-span-1 h-[100%] hidden sm:block">
 
                 </div>
-                <motion.div className="col-span-4 max-w-sm max-h-sm bg-center bg-no-repeat bg-cover " style={{ backgroundImage: `url(${Image[currimg].image})` }} onClick={() => {
+                <motion.div className="sm:col-span-4  bg-center bg-no-repeat bg-cover z-1 overflow-auto flex align-middle" style={{  }} onClick={() => {
                     setcurrimg((currimg + 1) % Image.length)
                 }}
                     initial={{
@@ -51,6 +51,7 @@ export const Imageslider = () => {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 2 }}
                 >
+                    <img src={Image[currimg].image} className="my-auto"></img>
 
                 </motion.div>
             </motion.div>

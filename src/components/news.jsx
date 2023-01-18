@@ -21,7 +21,7 @@ const published_date=date.getFullYear()+'-' + (date.getMonth()+1) + '-'+date.get
   <span class="circle" aria-hidden="true">
   <span class="icon arrow"></span>
   </span>
-  <span class="button-text">Read More</span>
+  <a class="button-text" href={props.news_url}>Read More</a>
 </button>
       </div>
     </div>

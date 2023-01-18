@@ -26,7 +26,7 @@ const NewsSlider = () => {
     return (
         <>
         <div className='news-heading'>
-            <h1>Stay Infromed on the Latest Industry News</h1>
+            <h1 className='ml-[8%]'>Stay Informed on the Latest Industry News</h1>
         </div>
         <div className="product-carousel">
             <button className="pre-btn" onClick={btnpressprev}><p>&lt;</p></button>

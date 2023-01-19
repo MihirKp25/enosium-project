@@ -8,7 +8,7 @@ import { Navbar } from "./navbar"
 import NewsSlider from "./newsSlider"
 
 export const Home=()=>{
-    return <div>
+    return <div id="home">
         <Navbar/>
         <Imageslider/>
         <DashBoardDiv/>

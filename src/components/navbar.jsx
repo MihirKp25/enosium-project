@@ -36,9 +36,10 @@ let navbarClasses=['navbar'];
         <div className={sidebar? "container1" : "display-none"}>
         <div className="nav-components">
             <ul>
-                <li><a href="#about">Home</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#footercontact">Contact Us</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#home">Dashboard</a></li>
-                <li><a href="#skills">About</a></li>
                 
             </ul>
 

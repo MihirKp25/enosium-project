@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 
 export const Imageslider = () => {
     const [currimg, setcurrimg] = useState(0);
-    setTimeout(() => {
-        setcurrimg((currimg + 1) % Image.length)
-    }, 5000);
+    const [check, setcheck]=useState(true)
+    // setTimeout(() => {
+    //     setcurrimg((currimg + 1) % Image.length)
+    // }, 5000);
     return <div>
         <div className="w-[100%] h-[600px] mx-auto bg-gradient-to-l from-[#2e0969] to-[#792ebe] z-1">
             <motion.div className="w-[100%] h-[100%] bg-center bg-no-repeat bg-cover sm:grid sm:grid-cols-12 flex align-middle">
@@ -21,7 +22,7 @@ export const Imageslider = () => {
                             y: 100,
                             opacity: 0
                         }}
-                        animate={{ y: 0, opacity: 1 }}
+                        animate={{  y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
                     >
                         <h1 className="text-left font-serif text-3xl sm:text-5xl pl-[7%] sm:text-[#0a0a0a] text-white">{Image[currimg].title}</h1>

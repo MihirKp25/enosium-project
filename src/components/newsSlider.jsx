@@ -17,7 +17,7 @@ const NewsSlider = () => {
         box.scrollLeft = box.scrollLeft + width;
     }
     useEffect(()=>{
-        Axios.get("https://newsapi.org/v2/top-headlines?country=i&category=business&apiKey=7ddfedfedba34c428252ed29cc68f2da")
+        Axios.get("https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=7ddfedfedba34c428252ed29cc68f2da")
         .then((res)=>{
             console.log(res.data.articles);
             setNewsInfm(res.data.articles);

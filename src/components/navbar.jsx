@@ -2,6 +2,7 @@ import { useState, useEffect, React } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { GoogleLogin } from "react-google-login";
 import {gapi} from "gapi-script";
+import { Link } from "react-router-dom";
 
 export const Navbar=()=>{
     const [sidebar, setSidebar]= useState(false);
@@ -71,7 +72,7 @@ export const Navbar=()=>{
                 <li><a href="#home">Home</a></li>
                 <li><a href="#footercontact">Contact Us</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#home">Dashboard</a></li>
+                <Link to="/dashboard">Dashboard</Link>
             </ul>
         </div>
         </div>

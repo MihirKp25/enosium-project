@@ -1,31 +1,56 @@
 import { useEffect, useState } from "react";
+import { Line, Circle } from "rc-progress";
+
+
+
+import "react-circular-progressbar/dist/styles.css";
 
 export const Percentage=()=>{
     const [percentage, setpercentage]=useState(0);
+    const [progressval, setprogressval]=useState(0);
+    const [progressendval, setprogressendval]=useState(65);
+    const speed=200;
+    let val = 0;
+    let check=0;
 
-    let progressval=0;
-    let progressendval=65;
-    let speed=50;
+        useEffect(()=>{
+                let progress=setTimeout(()=>{
+                    setpercentage(progressendval);
+                    console.log(percentage);
+                    
+                }, 1000)
+
+                
+        }, [])
     
-    // useEffect(()=>{
-    //     let progress=setInterval(()=>{
-    //     progressval++;
-    //      setpercentage(progressval);
-    //      console.log(progressval);
-    //     if(progressval===progressendval)
-    //     {
-    //         clearInterval(progress)
-    //     }
-    // }, speed)
-    // }, [])
+        
+        // progress();
 
-    return <div className="h-[400px] w-[400px] bg-[#cc3e3e] grid place-items-center relative">
-            <div className="h-[250px] w-[250px] rounded-[50%] bg-white grid place-items-center absolute">
-                <div className="h-[85%] w-[85%] rounded-[50%] bg-[#cc3e3e] relative text-center text-6xl">
-                    <p className="my-[30%] font-bold">
-                        {percentage}%
-                        </p>
-                </div>
-            </div>
+    return (
+    <div>
+
+    
+    <div className="w-[400px] h-[400px]">
+        <div className="absolute border-2 border-black w-[400px] h-[400px] z-99">
+
+        <Circle
+        percent={percentage}
+        strokeColor="blue"
+        strokeWidth={4}
+        trailColor="lightblue"
+        trailWidth={4}
+        strokeLinecap="round"
+        />
+        </div>
+        <p className=" flex justify-center flex-col text-center text-8xl h-full text-[#7f4ac0] border-2 border-[#c81d1d] ">
+            {percentage}%
+        </p>
+    
+
     </div>
+    <button onClick={()=>{
+        setpercentage(percentage==65 ? 34 : 65);
+    }}>change</button>
+    </div>
+    );
 }

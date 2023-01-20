@@ -1,5 +1,6 @@
 import { DashBoardDiv } from "./dashboard_button"
 import { Footer } from "./footer"
+import { Forminput } from "./form"
 import { Imageslider } from "./imageslider"
 import { Info_website } from "./info"
 import { Info_website1 } from "./info1"
@@ -17,7 +18,8 @@ export const Home=()=>{
         <Info_website/>
         <Info_website1/>
         <Info_website2/>
-        <Percentage/>
+       <Forminput/>
+        {/* <Percentage/> */}
         <Footer/>
     </div>
 }

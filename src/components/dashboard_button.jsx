@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 
 export const DashBoardDiv=()=>{
-    return <div className="h-[300px] grid md:grid-cols-2 grid-rows-2 mt-[5%]">
+    return <div className="h-[300px] grid md:grid-cols-2 grid-rows-2 my-[10%]">
         <div className="md:col-span-1 row-span-1 grid grid-rows-3">
             <div className="row-span-1"></div>
             {/* <motion.button className="h-[70%] w-[35%] my-auto rounded-xl border-[#2e0969] bg-[#2e0969] flex text-center place-content-center mx-auto row-span-1 items-center text-2xl text-white hover:bg-[#5815c2] hover:border-[#5815c2]"
@@ -22,7 +22,7 @@ export const DashBoardDiv=()=>{
 </button>
             <div className="row-span-1"></div>
         </div>
-        <div className="md:col-span-1 row-span-1 px-auto flex align-middle my-auto lg:text-3xl md:text-2xl text:sm text-[#2e0969] md:mr-44 text-center font-semibold" >
+        <div className="md:col-span-1 row-span-1 px-auto flex align-middle my-auto lg:text-3xl md:text-2xl text:3xl sm:text-xl text-[#2e0969] md:mr-44 text-center font-semibold " >
         Take the first step towards financial freedom by using our loan prediction website to get a personalized loan plan
         </div>
     </div>

@@ -8,6 +8,9 @@ export const Navbar=()=>{
     const [show, setShow] = useState(false);
     const [scrolled,setScrolled]=useState(false);
     const [signup, setSignup]=useState(false);
+    const [data, setData]=useState({});
+    const [login, setLogin]=useState(false);
+    const [dropdown, setDropdown]=useState(false);
 
     const handleClose = () => {
       setShow(false);
@@ -20,7 +23,7 @@ export const Navbar=()=>{
    
     const handleScroll=() => {
       const offset=window.scrollY;
-      if(offset > 400 ){
+      if(offset > 450 ){
       setScrolled(true);
       }
       else{
@@ -39,6 +42,8 @@ export const Navbar=()=>{
 
   const googleSuccess=(res)=>{
 		console.log(res);
+    setData(res.profileObj);
+    setLogin(true);
 		const result=res?.profileObj;
 		const token=res?.tokenId;
 	}
@@ -67,12 +72,19 @@ export const Navbar=()=>{
                 <li><a href="#footercontact">Contact Us</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#home">Dashboard</a></li>
-                
             </ul>
         </div>
         </div>
         <div className={sidebar?"nav-login2":"nav-login"}>
-            <button onClick={handleShow}>Sign In</button>
+            {login?
+            <div className="login-dropdown">
+              <button onClick={()=>{setDropdown(!dropdown)}}><p>{data.givenName}</p>
+              <i class="fa-sharp fa-solid fa-angle-down"></i></button>
+              {dropdown?<div className="dropdown-content">
+                <a href="#">Logout</a>
+              </div>:<></>}
+              </div>
+              :<button onClick={handleShow}>Sign In</button>}
         </div>
         <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

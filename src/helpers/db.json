@@ -1,0 +1,50 @@
+[
+  {
+    "bankName": "State Bank of India",
+    "intrest_rate": 8.4
+  },
+  {
+    "bankName": "Indian Overseas Bank",
+    "intrest_rate": 9.8
+  },
+  {
+    "bankName": "Jammu Kashmir Bank",
+    "intrest_rate": 7.5
+  },
+  {
+    "bankName": "Canara Bank",
+    "intrest_rate": 9.25
+  },
+  {
+    "bankName": "HDFC Bank",
+    "intrest_rate": 8.75
+  },
+  {
+    "bankName": "Karur Vysya Bank",
+    "intrest_rate": 9.35
+  },
+  {
+    "bankName": "South Indian Bank",
+    "intrest_rate": 5.15
+  },
+  {
+    "bankName": "IDBI Bank",
+    "intrest_rate": 9.1
+  },
+  {
+    "bankName": "Karnataka Bank",
+    "intrest_rate": 9.07
+  },
+  {
+    "bankName": "Fedral Bank of India",
+    "intrest_rate": 10.75
+  },
+  {
+    "bankName": "Tamilnad Mercantile Bank",
+    "intrest_rate": 10.0
+  },
+  {
+    "bankName": "Punjab National Bank",
+    "intrest_rate": 8.8
+  }
+]

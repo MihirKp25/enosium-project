@@ -964,7 +964,137 @@ img {
 				.method-action:hover {
 					background: var(--color-light);
 				}
-		 
- 
+
+    
+  /* Bar Graph Vertical */
+.intrest-rates-bar-graph{
+  width: 100%;
+  margin-bottom: 60%;
+}
+.intrest-rates-bar-graph h1{
+  margin-left: 5%;
+  font-weight: 600;
+  font-size: larger;
+}
+.bar-graph-vertical {
+  margin-top: 80px;
+  max-width: 80%;
+}
+.bar-graph .year {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+}
+
+
+
+.bar-graph-vertical .bar-container {
+  float: left;
+  height: 100vh;
+  margin-right: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.percentage-bar{
+  width: 50%;
+    margin-left: 31%;
+    margin-right: 30%;
+    margin-top: 1%;
+    /* display: flex; */
+    position: absolute;
+    gap: 3%;
+    height: 100vh;
+    /* transform: rotate(-90deg); */
+}
+
+.percentage-bar .bar {
+  border-radius: 3px;
+  bottom: 40px;
+  position: relative;
+  height: 5vh;
+  margin: 3% 0;
+}
+
+  .bar-graph-vertical .bank-names .year{
+    width: 49%;
+    height: 5%;
+    bottom: 0;
+    left: 0;
+    margin: 3.4% 0;
+    position: relative;
+    right: 0;
+  }
+
+.bank-names{
+  margin-bottom: 15%; 
+  height: 100vh;
+    width: 46%;
+    gap: 10%;
+    gap: 3.5%;
+    position: absolute;
+    margin-top: -2%;
+    text-align: right;
+}
+
+
+.bank-names .year p{
+  font-weight: 600;
+}
+
+.bar-graph-two .bar::after {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  color: #fff;
+  content: attr(data-percentage);
+  font-weight: 700;
+  left: 6px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 6px;
+  /* -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); */
+}
+
+.bar-graph-two .bar-one .bar {
+  background-color: #64b2d1;
+  -webkit-animation: show-bar-one-vertical 1.2s 0.1s forwards;
+  -moz-animation: show-bar-one-vertical 1.2s 0.1s forwards;
+  animation: show-bar-one-vertical 1.2s 0.1s forwards;
+}
+
+@media  screen and (max-width: 940px){
+  .bank-names{
+    margin-top: -2%;
+  }
+}
+
+@media  screen and (max-width: 600px){
+
+  .bank-names{
+    margin-top: -17%;
+    width: 120%;
+  }
+
+  .bar-graph-vertical .bank-names .year{
+    margin: 1.3% 0;
+  }
+
+  .percentage-bar{
+    margin-left: 60%;
+    margin-top: -10%;
+  }
+
+  .percentage-bar .bar{
+    margin: 3% 0;
+  }
+}
+
 
 

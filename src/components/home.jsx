@@ -9,8 +9,13 @@ import { Navbar } from "./navbar"
 import NewsSlider from "./newsSlider"
 import { Percentage } from "./percenatgemeter"
 
+
+
 export const Home=()=>{
+    
+
     return <div id="home">
+        
         <Navbar/>
         <Imageslider/>
         <DashBoardDiv/>
@@ -21,5 +26,6 @@ export const Home=()=>{
        {/* <Forminput/> */}
         {/* <Percentage/> */}
         <Footer/>
+        
     </div>
 }

@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 export const Imageslider = () => {
     const [currimg, setcurrimg] = useState(0);
     const [check, setcheck] = useState(true)
-    // setTimeout(() => {
-    //     setcurrimg((currimg + 1) % Image.length)
-    // }, 3000);
+    setTimeout(() => {
+        setcurrimg((currimg + 1) % Image.length)
+    }, 3000);
     return <div>
         <div className="w-[100%] h-[600px] mx-auto bg-gradient-to-l from-[#2e0969] to-[#792ebe] z-1">
             <div className="w-[100%] h-[100%] bg-center bg-no-repeat bg-cover sm:grid sm:grid-cols-12 flex align-middle">

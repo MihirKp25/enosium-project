@@ -18,7 +18,7 @@ export const Home=()=>{
         <Info_website/>
         <Info_website1/>
         <Info_website2/>
-       <Forminput/>
+       {/* <Forminput/> */}
         {/* <Percentage/> */}
         <Footer/>
     </div>

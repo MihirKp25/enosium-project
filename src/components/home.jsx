@@ -19,7 +19,7 @@ export const Home=()=>{
         <Navbar/>
         <Imageslider/>
         <DashBoardDiv/>
-        {/* <NewsSlider/> */}
+        <NewsSlider/>
         <Info_website/>
         <Info_website1/>
         <Info_website2/>

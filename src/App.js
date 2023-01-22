@@ -8,16 +8,19 @@ import { useState } from "react"
 export const Appcontext=createContext();
 function App() {
   const [dataInput, setDataInput]=useState({
-    loan_history: "",
-    gaurantor: "",
-    marital_status: "",
-    amt_in_cuur_acct: "",
-    ant_in_sav_acct: "",
-    loan_amt: "",
-    other_loan_plan: "",
-    check_telephone: "",
-    owned_property: "",
-    type_of_job: "",
+    loan_history: "0",
+    gaurantor: "0",
+    marital_status: "0",
+    amt_in_cuur_acct: "0",
+    ant_in_sav_acct: "0",
+    loan_amt: "0",
+    other_loan_plan: "0",
+    check_telephone: "0",
+    owned_property: "0",
+    type_of_job: "0",
+    number_of_loans_taken: "1",
+    maintenance_provider: "1",
+    per_of_income: "1",
   })
   return (
     <Appcontext.Provider value={{dataInput, setDataInput}}>

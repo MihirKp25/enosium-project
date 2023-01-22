@@ -414,7 +414,15 @@ export const Forminput = () => {
 
                                 <div className="grid grid-rows-3  p-5 rounded-xl bg-[#ffffff]">
                                     <h1 className="text-4xl text-left font-semibold uppercase">banking deatils-ii</h1>
-                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">number of loans taken</label><select type="number" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of loans taken from current bank" >
+                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">number of loans taken</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of loans taken from current bank" 
+                                    onChange={(e)=>{
+                                        setDataInput({
+                                            ...dataInput,
+                                            number_of_loans_taken: e.target.value
+                                        })
+                                    }}
+                                    value={dataInput.number_of_loans_taken}
+                                    >
                                         <option value="" disabled selected><span className="text-[#4e4c4c]">Number of loans taken from current bank</span></option>
                                         <option>1</option>
                                         <option>2</option>
@@ -497,12 +505,16 @@ export const Forminput = () => {
                 onClick={async ()=>{
                     console.log(dataInput);
                     try{
-                        const response = await fetch('/predict', {
+                        const response = await fetch('http://127.0.0.1:5000/predict', {
                             method: 'post',
-                            body: dataInput
+                            headers: {
+                                'Content-Type' : 'application/json'
+                                },
+                            body: JSON.stringify(dataInput)
                             
-                        });
-                        console.log('Completed!', response);
+                        }).then((res)=>res.text())
+                        .then(text=>console.log(text))
+                        // console.log('Completed!', response);
                     }
                     catch(err) {
                         console.error(`Error: ${err}`);

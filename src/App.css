@@ -637,8 +637,8 @@ width: 55%;
  }
 
 .footer-btn button {
-  width: 100%;
-  margin-left: 3%;
+  width: 30%;
+  margin-left: 75%;
   font-family: inherit;
   font-size: 20px;
   background: royalblue;
@@ -1259,5 +1259,73 @@ img {
   }
 }
 
+/*-------Back Button-----------*/
+button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  position: absolute;
+  box-sizing: border-box;
+  border: 0;
+  width: 9.5%;
+  border-radius: 20px;
+  color: black;
+  padding: 0.5em 1em;
+  background: transparent;
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: 13px;
+  /* background: var(--primary-color); */
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid black;
+  border-width: var(--arrow-stroke) 0 0 var(--arrow-stroke);
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+button:hover .arrow {
+  background: white;
+}
+
+button:hover .arrow:before {
+  right: 6px;
+  border: solid white;
+  border-width: var(--arrow-stroke) 0 0 var(--arrow-stroke);
+}
 
 

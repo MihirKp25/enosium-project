@@ -1,28 +1,28 @@
-import Image1 from "../images/Image1.jpg"
-import Image2 from "../images/Image2.jpg"
-import Image3 from "../images/Image3.jpg"
-import Image4 from "../images/image4.png"
+import Image1 from "../images/image4.png"
+import Image2 from "../images/creditCaed.png"
+import Image3 from "../images/loan2.png"
+import Image4 from "../images/onlineBanking.png"
 
 export const Image=[
     {
-        image: Image4,
-        title: "THIS IS MY FIRST TITLE",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto laborum quos expedita quas dolor nobis hic officia consequatur optio quod vero, sunt quisquam esse eveniet. Itaque perspiciatis explicabo sequi aliquam culpa iusto sapiente dignissimos?",
+        image: Image1,
+        title: "Get accurate loan prediction in minutes not day",
+        description: "",
         
     },
     {
         image: Image2,
-        title: "this is my second title",
-        description: "this is my second description",
+        title: "Don't let low credit score hold you back from your home dream or car",
+        description: "",
     },
     {
         image: Image3,
-        title: "this is my third title",
-        description: "this is my third description",
+        title: "Don't let bad credit history dictate your financial future.",
+        description: "",
     },
     {
         image: Image4,
-        title: "this is my fourth title",
-        description: "this is my fourth description",
+        title: "With the right tools and information, you can turn thing around and achieve your goals",
+        description: "",
     }
 ]

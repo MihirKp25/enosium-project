@@ -27,7 +27,7 @@ export const Imageslider = () => {
 
                     {
                         currimg==0 && (
-                            <motion.div className="row-span-1"
+                            <motion.div className="row-span-3"
                         initial={{
                             y: 100,
                             opacity: 0
@@ -35,7 +35,7 @@ export const Imageslider = () => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
                     >
-                        <h1 className="text-left font-serif text-3xl sm:text-5xl pl-[7%] sm:text-[#0a0a0a] text-white">{Image[currimg].title}</h1>
+                        <h1 className="text-left font-serif text-3xl mt-10 sm:text-5xl pl-[7%] sm:text-[#0a0a0a] text-white">{Image[currimg].title}</h1>
                     </motion.div>
                         )
                     }

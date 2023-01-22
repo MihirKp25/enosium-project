@@ -507,13 +507,21 @@ width: 55%;
   font-weight: 700;
  }
 
- @media  screen and (max-width: 1160px) {
+ @media  screen and (max-width: 1000px) {
   .news{
-    height: 50vh;
+    height: 55vh;
   }
 
   .news_img{
-    height: 22vh;
+    height: 25vh;
+  }
+
+  .news-title{
+    height: 15vh;
+  }
+
+  .news-published-date{
+    height: 0.1vh;
   }
   
   .news-read-more{
@@ -523,6 +531,10 @@ width: 55%;
 
   .cta{
     width: 40%;
+  }
+
+  .next-btn, .pre-btn{
+    margin-top: 15%;
   }
  }
 
@@ -534,6 +546,23 @@ width: 55%;
 
   .news{
     min-width: 40%;
+    height: 50vh;
+  }
+
+  .news_img{
+    height: 22vh;
+  }
+
+  .news-title{
+    height: 13vh;
+  }
+
+  .news-published-date{
+    height: 0.1vh;
+  }
+
+  .next-btn, .pre-btn{
+    margin-top: 15%;
   }
 }
 
@@ -558,6 +587,46 @@ width: 55%;
     .news_img{
       height: 25vh;
     }
+
+    .news-title{
+      height: 19vh;
+    }
+
+    .pre-btn, .next-btn{
+      margin-top: 24%;
+    }
+  }
+
+  @media screen and (max-width: 495px){
+    .pre-btn, .next-btn{
+      width: 10%;
+      margin-top: 45%;
+    }
+
+    .product-container{
+      width: 80%;
+      margin: 0;
+      height: 50vh;
+      padding: 0;
+      gap: 10%;
+    }
+
+    .news{
+      min-width: 85%;
+      height: 44vh;
+    }
+
+    .news_img{
+      height: 17vh;
+    }
+
+    .news-title{
+      height: 12vh;
+    }
+
+    .news-published-date{
+      height: 2vh;
+    }
   }
 
 
@@ -568,8 +637,8 @@ width: 55%;
  }
 
 .footer-btn button {
-  width: 100%;
-  margin-left: 3%;
+  width: 30%;
+  margin-left: 75%;
   font-family: inherit;
   font-size: 20px;
   background: royalblue;
@@ -624,10 +693,10 @@ width: 55%;
 
 /*dashboard button css-------*/
 .cta {
-  width: 36%;
+  width: 60%;
   height: 100%;
   position: relative;
-  margin: auto;
+  margin-left: 50%;
   padding: 12px 18px;
   transition: all 0.2s ease;
   border: none;
@@ -646,8 +715,8 @@ width: 55%;
   display: block;
   border-radius: 50px;
   background: #c111c9;
-  width: 29%;
-  height: 130%;
+  width: 35%;
+  height: 90%;
   transition: all 0.3s ease;
  }
  
@@ -658,7 +727,6 @@ width: 55%;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #234567;
-  margin-top: 8%;
  }
 
 
@@ -673,12 +741,12 @@ width: 55%;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
-  margin-top: 8%;
  }
  
  .cta:hover:before {
   width: 100%;
-  background: #5815c2;
+  background: rgb(95,19,108);
+  background: linear-gradient(90deg, rgba(95,19,108,1) 0%, rgba(88,11,107,1) 46%, rgba(139,14,169,1) 100%);
  }
  
  .cta:hover svg {
@@ -695,27 +763,122 @@ width: 55%;
   color: white;
  }
 
- @media  screen and (max-width: 1040px){
+ @media  screen and (max-width: 1200px){
   .cta{
-    width:45%;
+    width:60%;
+  }
+  .cta span{
+    margin-bottom: 2%;
+  }
+
+  .cta::before{
+    height: 74%;
+    top: 10px;
   }
  }
 
- @media  screen and (max-width: 950px){
+ @media  screen and (max-width: 1050px){
   .cta{
-    width:48%;
+    width:70%;
+  }
+
+  .cta:before{
+    width: 30%;
+  }
+
+  
+ }
+
+ @media  screen and (max-width: 900px){
+  .cta{
+    width:85%;
+    margin-left: 40%;
   }
  }
 
- @media  screen and (max-width: 870px){
+ @media  screen and (max-width: 766px){
   .cta{
-    width:52%;
+    width:35%;
+  }
+
+  .cta::before{
+    height: 100%;
+  }
+  .cta span{
+    margin-top: 11%;
+  }
+  .cta svg{
+    margin-top: 8%;
+  }
+ }
+
+ @media  screen and (max-width: 680px){
+
+  .cta:before{
+    height: 95%;
+    width: 35%;
+  }
+  .cta span{
+    margin-top: 11%;
+  }
+  .cta svg{
+    margin-top: 8%;
+  }
+ }
+
+ @media  screen and (max-width: 680px){
+
+  .cta{
+    width: 45%;
+  }
+
+  .cta:before{
+    height: 95%;
+    width: 30%;
+  }
+  .cta span{
+    margin-top: 11%;
+  }
+  .cta svg{
+    margin-top: 8%;
   }
  }
 
  @media  screen and (max-width: 500px){
+
   .cta{
-    width:65%;
+    width: 60%;
+    margin: auto;
+  }
+
+  .cta:before{
+    height: 95%;
+    width: 30%;
+  }
+  .cta span{
+    margin-top: 11%;
+  }
+  .cta svg{
+    margin-top: 8%;
+  }
+ }
+
+ @media  screen and (max-width: 300px){
+
+  .cta{
+    width: 80%;
+    margin: auto;
+  }
+
+  .cta:before{
+    height: 115%;
+    width: 30%;
+  }
+  .cta span{
+    margin-top: 18%;
+  }
+  .cta svg{
+    margin-top: 15%;
   }
  }
 
@@ -974,7 +1137,7 @@ img {
 .intrest-rates-bar-graph h1{
   margin-left: 5%;
   font-weight: 600;
-  font-size: larger;
+  font-size: x-large;
 }
 .bar-graph-vertical {
   margin-top: 80px;
@@ -1096,5 +1259,195 @@ img {
   }
 }
 
+/*-------Back Button-----------*/
+.back-button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  position: relative;
+  box-sizing: border-box;
+  border: 0;
+  width: 9.5%;
+  border-radius: 20px;
+  color: black;
+  padding: 0.5em 1em;
+  background: transparent;
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  margin-top: 20%;
+  /* margin-left: 1%; */
+}
+
+.back-button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-button .arrow {
+  margin-top: 1px;
+  width: 13px;
+  /* background: var(--primary-color); */
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.back-button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid black;
+  border-width: var(--arrow-stroke) 0 0 var(--arrow-stroke);
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.back-button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+}
+
+.back-button:hover .arrow {
+  background: white;
+}
+
+.back-button:hover .arrow:before {
+  right: 6px;
+  border: solid white;
+  border-width: var(--arrow-stroke) 0 0 var(--arrow-stroke);
+}
+
+/*-------------Steps---------*/
+.steps-container{
+  margin: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+.step1, .step2, .step3{
+  width: 20%;
+  margin: 5%;
+  margin-top: 0;
+}
+.steps-image{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+}
+
+.steps-image img{
+  width: 60%;
+}
+
+.less-than, .greater-than{
+  width: 20%;
+  margin-top: 14%;
+  font-size: xxx-large;
+  color: rgb(95,19,108);
+  color: linear-gradient(90deg, rgba(95,19,108,1) 0%, rgba(88,11,107,1) 46%, rgba(139,14,169,1) 100%);
+}
+
+
+.steps-title{
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+}
+
+.greater-than{
+  text-align: right;
+}
+
+.dashboard{
+  position: absolute;
+  margin-top: -3%;
+  margin-left: -2%;
+  font-size: 150%;
+  font-weight: 600;
+  background: rgb(95,19,108);
+  background: linear-gradient(90deg, rgba(95,19,108,1) 0%, rgba(88,11,107,1) 46%, rgba(139,14,169,1) 100%);
+  color: white;
+  padding: 1% 5%;
+  border-radius: 25px;
+}
+
+@media  screen and (max-width: 1150px){
+  .less-than, .greater-than{
+    font-size: 250%;
+    margin-top: 20%;
+    width: 10%;
+  }
+
+  .steps-image img{
+    width: 70%;
+    margin: auto;
+  }
+ }
+
+ @media  screen and (max-width: 950px){
+  .less-than, .greater-than{
+    font-size: 210%;
+    margin-top: 28%;
+    width: 10%;
+  }
+
+  .steps-image img{
+    width: 77%;
+    margin: auto;
+  }
+ }
+
+ @media  screen and (max-width: 750px){
+  .less-than, .greater-than{
+    font-size: 210%;
+    margin-top: 28%;
+    width: 5%;
+  }
+
+  .steps-image img{
+    width: 80%;
+    margin: auto;
+  }
+ }
+
+ @media  screen and (max-width: 650px){
+  .less-than, .greater-than{
+    font-size: 150%;
+    margin-top: 45%;
+    width: 5%;
+  }
+
+  .steps-image img{
+    width: 80%;
+    margin: auto;
+  }
+ }
+
+ @media  screen and (max-width: 501px){
+  .less-than, .greater-than{
+    font-size: 150%;
+    margin-top: 54%;
+    width: 5%;
+  }
+
+  .steps-image img{
+    width: 80%;
+    margin: auto;
+  }
+ }
+
+ 
 
 

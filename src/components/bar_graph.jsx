@@ -26,7 +26,7 @@ export const Bar_graph=()=>{
                 items.map((item)=>{
                     return(
                     
-                    <motion.div  initial={{width:0, height: "5%"}} animate={{width:item.intrest_rate*20, height:"5%"}} transition={{duration: 2, delay:0}} class="bar" data-percentage={`${item.intrest_rate}%`} style={{height:"5%"}}></motion.div>
+                    <motion.div  initial={{width:0, height: "5%"}} animate={{width:item.intrest_rate*40, height:"5%"}} transition={{duration: 2, delay:0}} class="bar" data-percentage={`${item.intrest_rate}%`} style={{height:"5%"}}></motion.div>
                     
                     )
                 })

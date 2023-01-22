@@ -1,6 +1,6 @@
 import Image1 from "../images/image4.png"
 import Image2 from "../images/creditCaed.png"
-import Image3 from "../images/Image3.jpg"
+import Image3 from "../images/loan2.png"
 import Image4 from "../images/onlineBanking.png"
 
 export const Image=[

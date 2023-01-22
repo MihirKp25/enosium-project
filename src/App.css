@@ -624,10 +624,10 @@ width: 55%;
 
 /*dashboard button css-------*/
 .cta {
-  width: 36%;
+  width: 60%;
   height: 100%;
   position: relative;
-  margin: auto;
+  margin-left: 50%;
   padding: 12px 18px;
   transition: all 0.2s ease;
   border: none;
@@ -646,8 +646,8 @@ width: 55%;
   display: block;
   border-radius: 50px;
   background: #c111c9;
-  width: 29%;
-  height: 130%;
+  width: 35%;
+  height: 90%;
   transition: all 0.3s ease;
  }
  
@@ -658,7 +658,6 @@ width: 55%;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #234567;
-  margin-top: 8%;
  }
 
 
@@ -673,12 +672,12 @@ width: 55%;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
-  margin-top: 8%;
  }
  
  .cta:hover:before {
   width: 100%;
-  background: #5815c2;
+  background: rgb(95,19,108);
+  background: linear-gradient(90deg, rgba(95,19,108,1) 0%, rgba(88,11,107,1) 46%, rgba(139,14,169,1) 100%);
  }
  
  .cta:hover svg {
@@ -695,27 +694,122 @@ width: 55%;
   color: white;
  }
 
- @media  screen and (max-width: 1040px){
+ @media  screen and (max-width: 1200px){
   .cta{
-    width:45%;
+    width:60%;
+  }
+  .cta span{
+    margin-bottom: 2%;
+  }
+
+  .cta::before{
+    height: 74%;
+    top: 10px;
   }
  }
 
- @media  screen and (max-width: 950px){
+ @media  screen and (max-width: 1050px){
   .cta{
-    width:48%;
+    width:70%;
+  }
+
+  .cta:before{
+    width: 30%;
+  }
+
+  
+ }
+
+ @media  screen and (max-width: 900px){
+  .cta{
+    width:85%;
+    margin-left: 40%;
   }
  }
 
- @media  screen and (max-width: 870px){
+ @media  screen and (max-width: 766px){
   .cta{
-    width:52%;
+    width:35%;
+  }
+
+  .cta::before{
+    height: 100%;
+  }
+  .cta span{
+    margin-top: 11%;
+  }
+  .cta svg{
+    margin-top: 8%;
+  }
+ }
+
+ @media  screen and (max-width: 680px){
+
+  .cta:before{
+    height: 95%;
+    width: 35%;
+  }
+  .cta span{
+    margin-top: 11%;
+  }
+  .cta svg{
+    margin-top: 8%;
+  }
+ }
+
+ @media  screen and (max-width: 680px){
+
+  .cta{
+    width: 45%;
+  }
+
+  .cta:before{
+    height: 95%;
+    width: 30%;
+  }
+  .cta span{
+    margin-top: 11%;
+  }
+  .cta svg{
+    margin-top: 8%;
   }
  }
 
  @media  screen and (max-width: 500px){
+
   .cta{
-    width:65%;
+    width: 60%;
+    margin: auto;
+  }
+
+  .cta:before{
+    height: 95%;
+    width: 30%;
+  }
+  .cta span{
+    margin-top: 11%;
+  }
+  .cta svg{
+    margin-top: 8%;
+  }
+ }
+
+ @media  screen and (max-width: 300px){
+
+  .cta{
+    width: 80%;
+    margin: auto;
+  }
+
+  .cta:before{
+    height: 115%;
+    width: 30%;
+  }
+  .cta span{
+    margin-top: 18%;
+  }
+  .cta svg{
+    margin-top: 15%;
   }
  }
 

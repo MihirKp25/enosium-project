@@ -5,7 +5,7 @@ export const Backbutton=()=>{
         <div class="arrow"></div>
 
     </div>
-    Sign up
+    Home
     
 </button>
     )

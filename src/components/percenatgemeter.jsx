@@ -6,7 +6,8 @@ import { Line, Circle } from "rc-progress";
 import "react-circular-progressbar/dist/styles.css";
 
 export const Percentage=()=>{
-    const [percentage, setpercentage]=useState(0);
+    // const [percentage, setpercentage]=useState("");
+   let percentage="";
     const [progressval, setprogressval]=useState(0);
     const [progressendval, setprogressendval]=useState(65);
     const speed=200;
@@ -15,8 +16,9 @@ export const Percentage=()=>{
 
         useEffect(()=>{
                 let progress=setTimeout(()=>{
-                    setpercentage(progressendval);
-                    console.log(percentage);
+                    // setpercentage(progressendval);
+                    
+                  //  console.log(percentage);
                     
                 }, 1000)
 
@@ -45,12 +47,14 @@ export const Percentage=()=>{
         <p className=" flex justify-center flex-col text-center text-8xl h-full text-[#7f4ac0] border-2 border-[#c81d1d] ">
             {percentage}%
         </p>
+        <div>
+        {{percentage}}
+        </div>
+        
     
 
     </div>
-    <button onClick={()=>{
-        setpercentage(percentage==65 ? 34 : 65);
-    }}>change</button>
+   
     </div>
     );
 }

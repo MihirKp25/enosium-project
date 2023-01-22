@@ -493,6 +493,22 @@ export const Forminput = () => {
                     scale: 1.1,
                     transition: { duration: 0.25 },
                 }}
+
+                onClick={async ()=>{
+                    console.log(dataInput);
+                    try{
+                        const response = await fetch('/predict', {
+                            method: 'post',
+                            body: dataInput
+                            
+                        });
+                        console.log('Completed!', response);
+                    }
+                    catch(err) {
+                        console.error(`Error: ${err}`);
+                      }
+
+                }}
                 >submit</motion.button>
             </div>
         }

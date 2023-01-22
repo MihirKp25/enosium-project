@@ -4,6 +4,7 @@ import { Bar_graph } from "./bar_graph"
 import { Footer } from "./footer"
 import { Forminput } from "./form"
 import { Navbar } from "./navbar"
+import { Percentage } from "./percenatgemeter"
 import { Steps } from "./steps"
 
 export const Dashboard=()=>{
@@ -14,8 +15,8 @@ export const Dashboard=()=>{
         <div className="dashboard"><h1>Dashboard</h1></div>
         <Steps/>
         <Forminput/>
-        
-        <Bar_graph/>
+        <Percentage/>
+        {/* <Bar_graph/> */}
         <Footer/>
         </>
     )

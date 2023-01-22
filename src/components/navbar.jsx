@@ -64,7 +64,7 @@ export const Navbar=()=>{
             <div className="sidebar">
         <button onClick={()=>{setSidebar(!sidebar)}}><i className="fa-solid fa-bars"></i></button></div>
         <div className="nav-logo">
-        <a>Website</a>
+        <a>Finnacio</a>
         </div>
         <div className={sidebar? "container1" : "display-none"}>
         <div className="nav-components">

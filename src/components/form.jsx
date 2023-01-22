@@ -17,10 +17,10 @@ import { useEffect } from "react";
 export const Forminput = () => {
 
     const [num, setnum] = useState(1);
-    const { dataInput, setDataInput } = useContext(Appcontext);
+    const { dataInput, setDataInput, finalpercent, setFinalpercent } = useContext(Appcontext);
     
     return <div className="mb-[8%]">
-        <div className="w-[90%] flex justify-center align-middle pl-[10%]">
+        <div className="w-[90%] flex justify-center align-middle pl-[10%] ">
 
             <Line
                 percent={(100 / 5) * num}
@@ -61,7 +61,7 @@ export const Forminput = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 ">
                                 <div className="col-span-1  flex justify-center mt-10">
 
-                                    <div className="grid grid-rows-4  p-5 rounded-xl bg-[#ffffff]">
+                                    <div className="grid grid-rows-4  p-5 rounded-xl bg-[#ffffff] shadow-xl hover:shadow-md hover:shadow-[#dbc4f1] shadow-[#dbc4f1]">
 
 
                                         <h1 className="text-4xl text-left font-semibold uppercase">personal information-i</h1>
@@ -145,9 +145,9 @@ export const Forminput = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 ">
                                 <div className="col-span-1  flex justify-center mt-10">
 
-                                    <div className="grid grid-rows-5  p-5 rounded-xl bg-[#ffffff]">
+                                    <div className="grid grid-rows-5  p-5 rounded-xl bg-[#ffffff] shadow-xl hover:shadow-md hover:shadow-[#9f9ff3] shadow-[#9f9ff3]">
                                         <h1 className="text-4xl text-left font-semibold uppercase">personal information-ii</h1>
-                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">marital status</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Your marital status" 
+                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">marital status</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#2e76be] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Your marital status" 
                                         onChange={(e)=>{
                                             setDataInput({
                                                 ...dataInput,
@@ -162,14 +162,14 @@ export const Forminput = () => {
                                             <option value="-1">female and divorced/seperated/married</option>
                                             <option value="-2">male and divorced/seperated</option>
                                         </select></div>
-                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">employement time</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of years of employement" >
+                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">employement time</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#2e76be] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of years of employement" >
                                             <option value="" disabled selected><span className="text-[#4e4c4c]">Number of years of employement</span></option>
                                             <option>between 1 and 4 years</option>
                                             <option>greater than 4 years</option>
                                             <option>less than a year</option>
                                             <option>unemployed</option>
                                         </select></div>
-                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">owned property</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Do you own any property?" 
+                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">owned property</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#2e76be] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Do you own any property?" 
                                         onChange={(e)=>{
                                             setDataInput({
                                                 ...dataInput,
@@ -184,13 +184,13 @@ export const Forminput = () => {
                                             <option value="3">building society savings agreement/life insurance</option>
                                             <option value="-1">No property</option>
                                         </select></div>
-                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">type of housing</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Type of housing" >
+                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">type of housing</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#2e76be] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Type of housing" >
                                             <option value="" disabled selected><span className="text-[#4e4c4c]">Type of housing</span></option>
                                             <option>own</option>
                                             <option>for free</option>
                                             <option>rent</option>
                                         </select></div>
-                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">current address stay</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of years you stayed in your current address" >
+                                        <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">current address stay</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#2e76be] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of years you stayed in your current address" >
                                             <option value="" disabled selected><span className="text-[#4e4c4c]">Number of years you stayed in your current address</span></option>
 
                                             <option>1</option>
@@ -233,9 +233,9 @@ export const Forminput = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
                             <div className="col-span-1  flex justify-center mt-10">
 
-                                <div className="grid grid-rows-5  p-5 rounded-xl bg-[#ffffff]">
+                                <div className="grid grid-rows-5  p-5 rounded-xl bg-[#ffffff] shadow-xl hover:shadow-md hover:shadow-[#dbf39f] shadow-[#dff1b0]">
                                     <h1 className="text-4xl text-left font-semibold uppercase">loan details</h1>
-                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">purpose of taking loan</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Write your purpose of taking loan" >
+                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">purpose of taking loan</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#bebe2e] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Write your purpose of taking loan" >
                                         <option value="" disabled selected><span className="text-[#4e4c4c]">Choose your purpose of taking loan</span></option>
                                         <option>New Car Purchase</option>
                                         <option>Purchase of radio/television</option>
@@ -247,7 +247,7 @@ export const Forminput = () => {
                                         <option>Other repairs</option>
                                         <option>Old Car Repair</option>
                                     </select></div>
-                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">loan amount</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Loan amount taken" 
+                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">loan amount</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#bebe2e] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Loan amount taken" 
                                     onChange={(e)=>{
                                         setDataInput({
                                             ...dataInput,
@@ -264,7 +264,7 @@ export const Forminput = () => {
                                         <option value="8">3000-10000</option>
                                         <option value="10">{'>'}10000</option>
                                     </select></div>
-                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">gaurantor or debtor</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Choose from below fields according to you" 
+                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">gaurantor or debtor</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#bebe2e] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Choose from below fields according to you" 
                                     onChange={(e)=>{
                                         setDataInput({
                                             ...dataInput,
@@ -279,8 +279,16 @@ export const Forminput = () => {
                                         <option value="0">none</option>
 
                                     </select></div>
-                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">time duration</label><input type="number" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Time duration for loan" /></div>
-                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">maintenance provider</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of people who will provide maintenance" >
+                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">time duration</label><input type="number" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#bebe2e] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Time duration for loan" /></div>
+                                    <div className="row-span-1 w-[400px] mb-3"><label className="font-semibold uppercase text-gray-500">maintenance provider</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#bebe2e] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of people who will provide maintenance" 
+                                    onChange={(e)=>{
+                                        setDataInput({
+                                            ...dataInput,
+                                            maintenance_provider: e.target.value
+                                        })
+                                    }}
+                                    value={dataInput.maintenance_provider}
+                                    >
                                         <option value="" disabled selected><span className="text-[#4e4c4c]">Number of people who will provide maintenance</span></option>
                                         <option>1</option>
                                         <option>2</option>
@@ -320,9 +328,9 @@ export const Forminput = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
                             <div className="col-span-1  flex justify-center mt-10">
 
-                                <div className="grid grid-rows-4  p-5 rounded-xl bg-[#ffffff]">
+                                <div className="grid grid-rows-4  p-5 rounded-xl bg-[#ffffff] shadow-xl hover:shadow-md hover:shadow-[#9f9ff3] shadow-[#9f9ff3]">
                                     <h1 className="text-4xl text-left font-semibold uppercase">banking deatils-i</h1>
-                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">current account balance</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Amount in current account" 
+                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">current account balance</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#1f1fbd] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Amount in current account" 
                                     onChange={(e)=>{
                                         setDataInput({
                                             ...dataInput,
@@ -337,7 +345,7 @@ export const Forminput = () => {
                                         <option value="-1">no current account</option>
                                         <option value="2">greater than 200</option>
                                     </select></div>
-                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">saving account balance</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Amount in savings account" 
+                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">saving account balance</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#1f1fbd] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Amount in savings account" 
                                     onChange={(e)=>{
                                         setDataInput({
                                             ...dataInput,
@@ -354,14 +362,22 @@ export const Forminput = () => {
                                         <option value="-1">greater than 1000</option>
 
                                     </select></div>
-                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">installement percentage</label><select type="number" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Percentage of income paid as installement" >
+                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">installement percentage</label><select type="number" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#1f1fbd] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Percentage of income paid as installement" 
+                                    onChange={(e)=>{
+                                        setDataInput({
+                                            ...dataInput,
+                                            per_of_income: e.target.value
+                                        })
+                                    }}
+                                    value={dataInput.per_of_income}
+                                    >
                                         <option value="" disabled selected><span className="text-[#4e4c4c]">Percentage of income paid as installement</span></option>
                                         <option value="">1</option>
                                         <option value="">2</option>
                                         <option value="">3</option>
                                         <option value="">4</option>
                                     </select></div>
-                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">loan history</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Your loan history" 
+                                    <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">loan history</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#1f1fbd] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Your loan history" 
                                     onChange={(e)=>{
                                         setDataInput({
                                             ...dataInput,
@@ -412,7 +428,7 @@ export const Forminput = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 ">
                             <div className="col-span-1  flex justify-center mt-10">
 
-                                <div className="grid grid-rows-3  p-5 rounded-xl bg-[#ffffff]">
+                                <div className="grid grid-rows-3  p-5 rounded-xl bg-[#ffffff] shadow-xl hover:shadow-md hover:shadow-[#9f9ff3] shadow-[#9f9ff3]">
                                     <h1 className="text-4xl text-left font-semibold uppercase">banking deatils-ii</h1>
                                     <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">number of loans taken</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of loans taken from current bank" 
                                     onChange={(e)=>{
@@ -513,7 +529,10 @@ export const Forminput = () => {
                             body: JSON.stringify(dataInput)
                             
                         }).then((res)=>res.text())
-                        .then(text=>console.log(text))
+                        .then(text=>{
+                            console.log(text)
+                            setFinalpercent(text)
+                        })
                         // console.log('Completed!', response);
                     }
                     catch(err) {

@@ -7,9 +7,9 @@ export const Imageslider = () => {
     const [check, setcheck] = useState(true)
     setTimeout(() => {
         setcurrimg((currimg + 1) % Image.length)
-    }, 3000);
-    return <div>
-        <div className="w-[100%] h-[600px] mx-auto bg-gradient-to-l from-[#2e0969] to-[#792ebe] z-1">
+    }, 5000);
+    return <div className="shadow-2xl">
+        <div className="w-[100%] h-[600px] mx-auto bg-gradient-to-l from-[#2e0969] to-[#792ebe] z-1 shadow">
             <div className="w-[100%] h-[100%] bg-center bg-no-repeat bg-cover sm:grid sm:grid-cols-12 flex align-middle">
                 <img src={Image[currimg].image} className="absolute flex align-middle sm:hidden mx-auto my-auto opacity-50" />
                 <div className="col-span-1 flex items-center justify-center text-5xl text-gray-400"><button onClick={()=>{

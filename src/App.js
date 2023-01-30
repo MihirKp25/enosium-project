@@ -23,7 +23,7 @@ function App() {
     type_of_job: "0",
   })
 
-  const [finalpercent, setFinalpercent]=useState("98");
+  const [finalpercent, setFinalpercent]=useState("");
   return (
     <Appcontext.Provider value={{dataInput, setDataInput, finalpercent, setFinalpercent}}>
     <div className="App">

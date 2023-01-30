@@ -15,16 +15,16 @@ export const Percentage=()=>{
     let val = 0;
     let check=0;
 
-        useEffect(()=>{
-                let progress=setTimeout(()=>{
-                    setpercentage(finalpercent);
+        // useEffect(()=>{
+        //         let progress=setTimeout(()=>{
+        //             setFinalpercent(finalpercent);
                     
-                  //  console.log(percentage);
+        //           //  console.log(percentage);
                     
-                }, 1000)
+        //         }, 1000)
 
                 
-        }, [])
+        // }, [])
     
         
         // progress();
@@ -37,7 +37,7 @@ export const Percentage=()=>{
         <div className="absolute  w-[200px] h-[200px] z-99">
 
         <Circle
-        percent={percentage}
+        percent={finalpercent}
         strokeColor="blue"
         strokeWidth={4}
         trailColor="lightblue"
@@ -46,7 +46,7 @@ export const Percentage=()=>{
         />
         </div>
         <p className=" flex justify-center flex-col text-center text-6xl h-full text-[#7f4ac0] ">
-            {percentage}%
+            {finalpercent}%
         </p>
       
         
@@ -55,22 +55,22 @@ export const Percentage=()=>{
     </div>
     <div className="text-xl text-[#3d289d] p-4 flex justify-center ">
         {
-            percentage>=50 && percentage<=70 && (
+            finalpercent>=50 && finalpercent<=70 && (
                 <p className="text-[#ddba3b] font-semibold">There are chances that you'll default. 😊</p>
             )
         }
         {
-            percentage<=50 && (
+            finalpercent<=50 && (
                 <p className="text-[#c32929] font-semibold">There are very less chances that you'll default. 😒</p>
             )
         }
         {
-            percentage>=70 && percentage<=90 && (
+            finalpercent>=70 && finalpercent<=90 && (
                 <p className="text-[#42e1ec] font-semibold">There are preety good chances that you'll default. 😁</p>
             )
         }
         {
-            percentage>=90 && percentage<=100 && (
+            finalpercent>=90 && finalpercent<=100 && (
                 <p className="text-[#2cba44] font-semibold">There are high chances that you'll default. 🤩</p>
             )
         }

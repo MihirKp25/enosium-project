@@ -329,7 +329,7 @@ export const Forminput = () => {
                             <div className="col-span-1  flex justify-center mt-10">
 
                                 <div className="grid grid-rows-4  p-5 rounded-xl bg-[#ffffff] shadow-xl hover:shadow-md hover:shadow-[#9f9ff3] shadow-[#9f9ff3]">
-                                    <h1 className="text-4xl text-left font-semibold uppercase">banking deatils-i</h1>
+                                    <h1 className="text-4xl text-left font-semibold uppercase">banking details-i</h1>
                                     <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">current account balance</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#1f1fbd] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Amount in current account" 
                                     onChange={(e)=>{
                                         setDataInput({
@@ -429,7 +429,7 @@ export const Forminput = () => {
                             <div className="col-span-1  flex justify-center mt-10">
 
                                 <div className="grid grid-rows-3  p-5 rounded-xl bg-[#ffffff] shadow-xl hover:shadow-md hover:shadow-[#9f9ff3] shadow-[#9f9ff3]">
-                                    <h1 className="text-4xl text-left font-semibold uppercase">banking deatils-ii</h1>
+                                    <h1 className="text-4xl text-left font-semibold uppercase">banking details-ii</h1>
                                     <div className="row-span-1 w-[400px]"><label className="font-semibold uppercase text-gray-500">number of loans taken</label><select type="text" className="w-[100%]  py-3 bg-[#ffffff] border-b-2 px-1 border-[#ededed] outline-[#792ebe] hover:shadow-md hover:shadow-[#dbc4f1]" placeholder="Number of loans taken from current bank" 
                                     onChange={(e)=>{
                                         setDataInput({
